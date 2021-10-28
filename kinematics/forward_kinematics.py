@@ -83,7 +83,7 @@ class RRrobot:
         return trx
 
     def forward_kinematic(self,DH_table):
-        Transformation=np.ones([4,4],dtype=np.float64)
+        #Transformation=np.ones([4,4],dtype=np.float64)
         #print(DH_table)
 
         for i in range(self.number_of_links):
@@ -91,9 +91,10 @@ class RRrobot:
             self.d=DH_table[i][1]
             self.alpha=DH_table[i][2]
             self.a=DH_table[i][3]
-            transform=self.rotationz(self.theta)*self.translationz(self.d)*self.rotationx(self.alpha)*self.translationx(self.a)
-            Transformation*=transform
-        return Transformation
+            ztransform=np.matmul(self.rotationz(self.theta),self.translationz(self.d))
+            xtransform=np.matmul(self.rotationx(self.alpha),self.translationx(self.a))
+            transform=np.matmul(ztransform,xtransform)
+        return transform
 
 
 if __name__=='__main__':
