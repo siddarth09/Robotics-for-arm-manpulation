@@ -48,6 +48,7 @@ Inverse Kinematics is mainly used to find the link angle of the robotic arm mani
 also this inverse kinematics is for the 3-DOF arm with 2 links. 4 DOF and 6 DOF kinematics will be added later 
 ```bash
 #SAMPLE INPUT 
+# X Y Link1 Link 2
 3 4 4 5
 #SAMPLE OUTPUT
 LINK ANGLE 1 = -0.5181732776252194, LINK ANGLE 2 = 2.168202743440247
