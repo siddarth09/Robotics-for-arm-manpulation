@@ -6,7 +6,7 @@ Robot kinematics applies geometry to the study of the movement of multi-degree o
 ## HOW TO FIND ROBOT KINEMATICS (FORWARD)
 > The Robot kinematics can be found in three simple ways
   1. First define Universal coordinate system and assign the axes to the robot joints ( including to end effector)
-  2. Using `Denavit-Hartenberg`notation assign the DH-Parameters for the robot link
+  2. Using `Denavit-Hartenberg` notation assign the DH-Parameters for the robot link
   3. Using the DH-parameter table, find transformation matrix
 
 ### DH-PARAMETERS
