@@ -19,7 +19,7 @@ NOTATION          |       DEFINITION
 4.Link Length     | The distance from Zi to Zi+1 measured along X axis
 
 
-# SAMPLE INPUT AND OUTPUT
+## SAMPLE INPUT AND OUTPUT
 ```bash
 DH TABLE
 60 0 0 24
