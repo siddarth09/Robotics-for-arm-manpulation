@@ -42,6 +42,17 @@ FRAME||THETA ||Dist ||ALPHA  ||A
  [  0.           0.80115264  -0.59846007   0.        ]
  [  0.           0.           0.           1.        ]]
 ```
+## INVERSE KINEMATICS
 
+Inverse Kinematics is mainly used to find the link angle of the robotic arm manipulator, given we know the desired x and y position of the object. Here we have assumed the initial position of the robot end effector to be (0,0) ie; the origin. Using alegbraic equations the inverse kinematic of the end effector can be found.
+also this inverse kinematics is for the 3-DOF arm with 2 links. 4 DOF and 6 DOF kinematics will be added later 
+```bash
+#SAMPLE INPUT 
+3 4 4 5
+#SAMPLE OUTPUT
+LINK ANGLE 1 = -0.5181732776252194, LINK ANGLE 2 = 2.168202743440247
+
+
+```
 NOTE:
 > plotting the arm using matplot will be added soon
